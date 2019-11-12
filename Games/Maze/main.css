@@ -1,0 +1,129 @@
+.game{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.endScreen {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.endScreenMovers {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.wall {
+  position: absolute;
+  background-color: black;
+  -webkit-transition: all 6s linear;
+  -moz-transition: all 6s linear;
+  transition: all 6s linear;
+}
+
+.Player {
+  background-color: red;
+  position: absolute;
+}
+
+.Enemy0, .Enemy1, .Enemy2, .Enemy3, .Enemy4, .Enemy5, .Enemy6, .Enemy7, .Enemy8, .Enemy9 {
+  position: absolute;
+}
+
+.Enemy0{
+  background-color: green;
+}
+
+.Enemy1 {
+  background-color: purple;
+}
+
+.Enemy2 {
+  background-color: blue;
+}
+
+.Enemy3 {
+  background-color: yellow;
+}
+
+.Enemy4 {
+  background-color: pink;
+}
+
+.Enemy5 {
+  background-color: teal;
+}
+
+.Enemy6 {
+  background-color: maroon;
+}
+
+.Enemy7{
+  background: orange;
+}
+
+.Enemy8{
+  background: khaki;
+}
+
+.Enemy9{
+    background: peru;
+}
+
+.movers {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.startScreen {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: blue;
+  text-align: center;
+  padding-top: 30%;
+  z-index: 1;
+}
+
+.startGame {
+  margin: 0 auto;
+  background-color: red;
+  width: 20%;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.startGame:hover {
+  cursor: pointer;
+  background-color: maroon;
+}
+
+.levelSelect {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.levelSelect li{
+    padding: 10px;
+    background-color: wheat;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+}
+
+.levelSelect li:hover{
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.levelSelect li:first-child{
+  margin-left: 0px;
+}

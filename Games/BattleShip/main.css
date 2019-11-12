@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#reset{
+  display: none;
+  margin-top: 20px;
+}
+
+.game-container {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#info-area {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  float: left;
+}
+
+.legend {
+  width: 150px;
+  display: block;
+  float: left;
+  padding-left: 10px;
+}
+
+  .legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .legend ul li {
+    position: relative;
+  }
+
+  .legend .colorbox {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+  }
+
+#bs-game {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  float: left;
+}
+
+.box {
+  outline: 1px solid black;
+  display: block;
+  position: absolute;
+}
+
+
+
+.black {
+  background-color: black;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.lightblue {
+    background-color: lightblue;
+}

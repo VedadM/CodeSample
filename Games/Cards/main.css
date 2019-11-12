@@ -1,0 +1,166 @@
+ul {
+  list-style: none;
+    position: relative;
+    margin: 0 auto;
+      width: 430px;
+      height: 110px
+}
+
+li {
+  width: 70px;
+  height: 93px;
+  float: left;
+  position: relative;
+    margin-left: 10px;
+    background-color: red;
+}
+
+li:first-child{
+  margin-left: 0px;
+}
+
+.cards {
+  width: 70px;
+  height: 93px;
+  background-image: url(Playing_Card.jpg);
+    position: absolute;
+      background-size: 1290%;
+      left: -9999px;
+  top: 0px;
+  background-position: 1px 186px;
+}
+
+.button-container {
+  width: 100px;
+  margin: 0px auto 17px auto;
+  overflow: hidden;
+}
+
+#deal-cards, #iamok-btn, #replace-cards, #reset{
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  width: 90px;
+  height: 28px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: helvetica;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#reset {
+  display: none;
+}
+
+#replace-cards {
+  display: none;
+}
+
+#info {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  font-family: fantasy;
+  outline: 1px solid black;
+  position: relative;
+}
+
+#results {
+  height: 200px;
+  width: 500px;
+  clear: both;
+  padding: 10px;
+  overflow: scroll;
+
+}
+
+#pts_left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+  #pts_left p{
+      text-align: center;
+  }
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.dealt-already {
+  outline: 2px solid blue;
+}
+
+.card-1-H {background-position: 1px 186px; left: 0px;}
+.card-1-D {background-position: 1px 93px; left: 0px;}
+.card-1-C {background-position: 1px 0px; left: 0px;}
+.card-1-S {background-position: 1px -93px; left: 0px;}
+
+.card-2-H {background-position: -69px 186px; left: 0px;}
+.card-2-D {background-position: -69px 93px; left: 0px;}
+.card-2-C {background-position: -69px 0px; left: 0px;}
+.card-2-S {background-position: -69px -93px; left: 0px;}
+
+.card-3-H {background-position: -138px 186px; left: 0px;}
+.card-3-D {background-position: -138px 93px; left: 0px;}
+.card-3-C {background-position: -138px 0px; left: 0px;}
+.card-3-S {background-position: -138px -93px; left: 0px;}
+
+.card-4-H {background-position: -208px 186px; left: 0px;}
+.card-4-D {background-position: -208px 93px; left: 0px;}
+.card-4-C {background-position: -208px 0px; left: 0px;}
+.card-4-S {background-position: -208px -93px; left: 0px;}
+
+.card-5-H {background-position: -277px 186px; left: 0px;}
+.card-5-D {background-position: -277px 93px; left: 0px;}
+.card-5-C {background-position: -277px 0px; left: 0px;}
+.card-5-S {background-position: -277px -93px; left: 0px;}
+
+.card-6-H {background-position: -347px 186px; left: 0px;}
+.card-6-D {background-position: -347px 93px; left: 0px;}
+.card-6-C {background-position: -347px 0px; left: 0px;}
+.card-6-S {background-position: -347px -93px; left: 0px;}
+
+.card-7-H {background-position: -417px 186px; left: 0px;}
+.card-7-D {background-position: -417px 93px; left: 0px;}
+.card-7-C {background-position: -417px 0px; left: 0px;}
+.card-7-S {background-position: -417px -93px; left: 0px;}
+
+.card-8-H {background-position: -486px 186px; left: 0px;}
+.card-8-D {background-position: -486px 93px; left: 0px;}
+.card-8-C {background-position: -486px 0px; left: 0px;}
+.card-8-S {background-position: -486px -93px; left: 0px;}
+
+.card-9-H {background-position: -556px 186px; left: 0px;}
+.card-9-D {background-position: -556px 93px; left: 0px;}
+.card-9-C {background-position: -556px 0px; left: 0px;}
+.card-9-S {background-position: -556px -93px; left: 0px;}
+
+.card-10-H {background-position: -625px 186px; left: 0px;}
+.card-10-D {background-position: -625px 93px; left: 0px;}
+.card-10-C {background-position: -625px 0px; left: 0px;}
+.card-10-S {background-position: -625px -93px; left: 0px;}
+
+.card-11-H {background-position: -694px 186px; left: 0px;}
+.card-11-D {background-position: -694px 93px; left: 0px;}
+.card-11-C {background-position: -694px 0px; left: 0px;}
+.card-11-S {background-position: -694px -93px; left: 0px;}
+
+.card-12-H {background-position: -763px 186px; left: 0px;}
+.card-12-D {background-position: -763px 93px; left: 0px;}
+.card-12-C {background-position: -763px 0px; left: 0px;}
+.card-12-S {background-position: -763px -93px; left: 0px;}
+
+.card-13-H {background-position: -832px 186px; left: 0px;}
+.card-13-D {background-position: -832px 93px; left: 0px;}
+.card-13-C {background-position: -832px 0px; left: 0px;}
+.card-13-S {background-position: -832px -93px; left: 0px;}
