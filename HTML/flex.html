@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex Box</title>
+    <style type="text/css">
+      .container {
+        display: flex;
+        margin-bottom: 10px;
+        border: 1px dotted black
+      }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      padding-top: 6px;
+      box-sizing: border-box;
+      color: white;
+      font-size: xx-large;
+      font-family: sans-serif;
+    }
+
+    /* Color setup */
+    .red {background-color: red}
+    .blue {background-color: blue}
+    .green {background-color: green}
+
+    /* Dimension Setup */
+    .fixed-dimensions {width: 50px; height: 50px;}
+
+    /* 2. Flex box Direction */
+    .flex-box-direction {
+        flex-direction: column;
+    }
+
+    /* 3 Content justify */
+    .flex-box-justify {
+      justify-content: space-between;
+    }
+
+    /* 4 Element order */
+    .order-2 {order: 2}
+    .order-3 {order: 3}
+
+    /* 5 Flex Grow */
+    .flex-grow-1 {flex-grow: 1}
+    .flex-grow-2 {flex-grow: 2}
+    .flex-grow-3 {flex-grow: 3}
+
+
+    /* Example */
+    h1 {
+      text-align: center;
+    }
+
+    .example-content {
+      outline: 1px dotted black;
+      max-width: 600px;
+      margin: 0 auto;
+      min-height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      max-height: 50px;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      flex-direction: row;
+      display: flex;
+      width: 100%;
+    }
+
+    nav div {
+      flex-grow: 1;
+      outline: 1px dotted green;
+      text-align: center;
+    }
+
+    .inside-content {
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .side-bar {
+      outline: 1px dotted red;
+      width: 25%;
+    }
+
+    .main-content {
+      outline: 1px dotted blue;
+      width: 75%;
+    }
+
+    footer {
+      width: 100%;
+      outline: 1px dotted blue;
+      flex-wrap: wrap;
+      align-self: flex-end;
+      text-align: center;
+      height: 40px;
+      padding-top: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Flex Box -->
+    <div class="container">
+      <div class="red fixed-dimensions">
+        <span>1</span>
+      </div>
+      <div class="blue fixed-dimensions">
+        <span>2</span>
+      </div>
+      <div class="green fixed-dimensions">
+        <span>3</span>
+      </div>
+    </div>
+
+    <!-- 2. Flex Box Direction -->
+    <!--
+      flex-direction
+      Displays direction of child elements
+     CValue for flex-direction are column, column-revers, row, row-reverse
+
+      flex-wrap
+      defines what happens when element gets to end of the parent container
+      value for flex-wrap are nowrap, wrap, wrap-reverse
+
+      flex-flox is combination of both of these
+    -->
+    <div class="container flex-box-direction">
+      <div class="red fixed-dimensions">
+        <span>1</span>
+      </div>
+      <div class="blue fixed-dimensions">
+        <span>2</span>
+      </div>
+      <div class="green fixed-dimensions">
+        <span>3</span>
+      </div>
+    </div>
+
+    <!-- 3. Flex Box Justify -->
+    <!--
+
+      justify-content
+      How child elements will be aligned inside the parent
+      Values can be: baseline, center end, flex-end, flex-start, left, normal, right , safe, space around, space between, space-evenly, start, stretch
+
+      align-items
+      perpendicular to justify-content is align-items
+      it has same value as justify-content but in different axis (x to y axis)
+
+      align-self
+      is for individual items (almost an overide of the align-items)
+    -->
+
+    <div class="container flex-box-justify">
+      <div class="red fixed-dimensions">
+        <span>1</span>
+      </div>
+      <div class="blue fixed-dimensions">
+        <span>2</span>
+      </div>
+      <div class="green fixed-dimensions">
+        <span>3</span>
+      </div>
+    </div>
+
+    <!-- 4. Properties for children elements -->
+
+    <!--
+      Order of the element in the container (uses numbers)
+    -->
+    <div class="container">
+      <div class="red fixed-dimensions order-2">
+        <span>1</span>
+      </div>
+      <div class="blue fixed-dimensions order-3">
+        <span>2</span>
+      </div>
+      <div class="green fixed-dimensions">
+        <span>3</span>
+      </div>
+    </div>
+
+    <!-- 5. Flex Grow -->
+    <!--
+      flex-grow
+      Ability of the container to grow to full width of the container and relative to each other
+
+      flex-shrink
+      Ability of the container to shrink to full width of the container and relative to each other
+
+      flex-basis
+      Default width of the element before space is distributed
+
+      flex
+      Flex is combination of these 3
+      flex: <flex-grow> <flex-shrink> <flex-basis>
+    -->
+    <div class="container">
+      <div class="red fixed-dimensions flex-grow-1">
+        <span>1</span>
+      </div>
+      <div class="blue fixed-dimensions flex-grow-2">
+        <span>2</span>
+      </div>
+      <div class="green fixed-dimensions flex-grow-3">
+        <span>3</span>
+      </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Simple Site Example -->
+    <h1>Simple Example</h1>
+    <div class="example-content">
+      <header>
+        <nav style="">
+          <div>Link 1</div>
+          <div>Link 2</div>
+          <div>Link 3</div>
+          <div>Link 4</div>
+        </nav>
+      </header>
+      <div class="inside-content">
+        <div class="side-bar">Side Bar</div>
+        <div class="main-content">Content</div>
+      </div>
+      <footer>Something something copyright</footer>
+    </div>
+  </body>
+</html>
